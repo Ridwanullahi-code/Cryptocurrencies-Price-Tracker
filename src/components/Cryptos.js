@@ -17,7 +17,7 @@ function Cryptos(props) {
 
   return (
     <div>
-      <h4 className="font-4 white p-two">Crypto Statistic</h4>
+      <h3 className="white p-two">Crypto Statistic</h3>
       <div className="flexbox cryptos">
         {formatData(data).map((d) => (
           <div className="cont" key={d.id}>
@@ -29,18 +29,21 @@ function Cryptos(props) {
               <div className="v-flex detail">
                 <i className="fa-solid fa-circle-arrow-right arrow white" />
                 <h4 className="font-4 white">{d.name}</h4>
-                <p className="font-3 white">
-                  {d.price}
-                  $
-                </p>
-                <p className="font-3 white">
-                  {d.change}
-                  {d.change > 0 ? (
-                    <i className="fa fa-caret-up" aria-hidden="true" />
-                  ) : (
-                    <i className="fa fa-caret-down" aria-hidden="true" />
-                  )}
-                </p>
+                <span className="v-flex">
+                  <p className="font-3 white">
+                    $
+                    {d.price}
+                    k
+                  </p>
+                  <p className="font-3 white">
+                    {d.change}
+                    {d.change > 0 ? (
+                      <i className="fa fa-caret-up" aria-hidden="true" />
+                    ) : (
+                      <i className="fa fa-caret-down" aria-hidden="true" />
+                    )}
+                  </p>
+                </span>
               </div>
             </button>
           </div>
@@ -51,6 +54,6 @@ function Cryptos(props) {
 }
 // props validation should be proTypes
 Cryptos.propTypes = {
-  data: PropTypes.arrayOf.isRequired,
+  data: PropTypes.array.isRequired,
 };
 export default Cryptos;

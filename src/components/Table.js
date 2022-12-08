@@ -1,14 +1,13 @@
 import React from 'react';
-import { useLocation } from 'react-router-dom';
+import PropTypes from 'prop-types';
 
-function Table() {
-  const { state } = useLocation();
-  const data = state.crypto;
+function Table(props) {
+  const { data } = props;
   const ls = ['Symbol', 'Supply', 'Maximum', 'Market Cap', 'Volume', 'Price'];
 
   return (
     <section>
-      <h4 className="p-two white">Bitcoin Breakdown</h4>
+      <h3 className="p-two white">Bitcoin Breakdown</h3>
       <table className="mission-table white">
         <tbody>
           {ls.map((d, index) => (
@@ -16,7 +15,7 @@ function Table() {
               <th className="p-two">{d}</th>
               <td className="p-two">
                 <span>
-                  {Object.values(data[0])[index + 3]}
+                  {Object.values(data[0])[index + 4]}
                   K
                 </span>
                 <i
@@ -37,4 +36,8 @@ function Table() {
   );
 }
 
+// props validation should be propTypes
+Table.propTypes = {
+  data: PropTypes.array.isRequired,
+};
 export default Table;

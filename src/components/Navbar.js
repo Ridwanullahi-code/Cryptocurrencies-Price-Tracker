@@ -5,7 +5,7 @@ function Navbar() {
   return (
     <nav className="navbar white p-two">
       <div className="flexbox">
-        <NavLink to="/" className="white">
+        <NavLink to="/" className="white" style={{ fontSize: '12px' }}>
           <i className="fa fa-chevron-left" aria-hidden="true" />
           Home
         </NavLink>

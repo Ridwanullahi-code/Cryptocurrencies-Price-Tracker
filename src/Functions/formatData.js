@@ -1,5 +1,4 @@
 import { compose } from 'lodash/fp';
-
 import numbersWithCommas, { formatNumber } from './FormatNumber';
 
 const trans = compose(numbersWithCommas, formatNumber);
@@ -8,6 +7,7 @@ export const fn = (num) => (num > 1000 ? formatNumber(+num) : Math.round(num * 1
 const formatData = (data) => {
   const result = data.map((d) => ({
     id: d.id,
+    rank: d.rank,
     name: d.name,
     explorer: d.explorer,
     symbol: d.symbol,
