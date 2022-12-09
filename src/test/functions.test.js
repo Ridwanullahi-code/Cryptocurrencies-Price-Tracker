@@ -1,6 +1,5 @@
 import numbersWithCommas, { formatNumber } from '../Functions/formatNumber';
 import Filter from '../Functions/filter';
-import Message from '../Functions/message';
 
 describe('test for all functions', () => {
   // ACTION
@@ -50,14 +49,5 @@ describe('Filter cryptos', () => {
     expect(Filter(data, 'jy')).toStrictEqual([]);
     expect(Filter(data, 'z').length).toStrictEqual(0);
     expect(Filter(data, '4').length).toStrictEqual(0);
-  });
-});
-
-// test for message filtering
-describe('Message filtering', () => {
-  test('It should return an match message', () => {
-    Filter(data, 'Bi');
-    expect(Message(Filter(data, 'Bi'))).toBe('3 cryptos found');
-    expect(Message(Filter(data, '1'))).toBe('1 cryptos found');
   });
 });

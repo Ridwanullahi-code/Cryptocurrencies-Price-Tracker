@@ -237,3 +237,43 @@ body {
 .web-btn:active {
   background: #01541d;
 }
+
+.error {
+  background-color: rgb(255, 0, 0);
+}
+
+.found {
+  background-color: #00be3f;
+}
+
+.message {
+  width: 70%;
+  padding: 5px 0;
+  font-size: 13px;
+  margin: 10px auto;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.727);
+}
+
+.loader {
+  margin-top: 50px;
+}
+
+@media screen and (max-width: 468px) {
+  .cryptos {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .cryptos [class*="cont"] {
+    width: 100%;
+  }
+
+  .cryptos > .cont:nth-child(even) {
+    background: #4d76c2;
+  }
+
+  .cryptos > .cont:nth-child(odd) {
+    background: #4167ae;
+  }
+}
