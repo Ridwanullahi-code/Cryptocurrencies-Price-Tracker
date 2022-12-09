@@ -1,5 +1,5 @@
 import { compose } from 'lodash/fp';
-import numbersWithCommas, { formatNumber } from './FormatNumber';
+import numbersWithCommas, { formatNumber } from './formatNumber';
 
 const trans = compose(numbersWithCommas, formatNumber);
 export const fn = (num) => (num > 1000 ? formatNumber(+num) : Math.round(num * 100) / 100);

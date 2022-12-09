@@ -1,5 +1,5 @@
-import numbersWithCommas, { formatNumber } from '../Functions/formatNumber';
-import Filter from '../Functions/filter';
+import numbersWithCommas, { formatNumber } from '../functions/formatNumber';
+import Filter from '../functions/filter';
 
 describe('test for all functions', () => {
   // ACTION
