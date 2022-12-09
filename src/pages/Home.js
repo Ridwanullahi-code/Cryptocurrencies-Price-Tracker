@@ -6,7 +6,7 @@ import Input from '../components/Input';
 import { fetchCrypto } from '../redux/features/cryptoSlice';
 import Cryptos from '../components/Cryptos';
 import Crypto from '../components/Crypto';
-import Filter from '../functions/filter';
+import Filter from '../functions/filterCrypto';
 
 function Home() {
   const [state, setState] = useState('');

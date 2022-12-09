@@ -1,5 +1,5 @@
 import numbersWithCommas, { number } from '../functions/formatNumber';
-import Filter from '../functions/filter';
+import Filter from '../functions/filterCrypto';
 
 describe('test for all functions', () => {
   // ACTION
