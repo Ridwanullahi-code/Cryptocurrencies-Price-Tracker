@@ -1,7 +1,7 @@
 import React from 'react';
 import { useNavigate } from 'react-router-dom';
 import PropTypes from 'prop-types';
-import formatData from '../functions/formatData';
+import formatData from '../Functions/formatData';
 
 function Cryptos(props) {
   const { data } = props;

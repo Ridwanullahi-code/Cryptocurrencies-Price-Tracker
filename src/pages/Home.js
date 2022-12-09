@@ -6,7 +6,7 @@ import Input from '../components/Input';
 import { fetchCrypto } from '../redux/features/cryptoSlice';
 import Cryptos from '../components/Cryptos';
 import Crypto from '../components/Crypto';
-import Filter from '../functions/filterCrypto';
+import Filter from '../Functions/filter';
 
 function Home() {
   const [state, setState] = useState('');
@@ -53,10 +53,11 @@ function Home() {
           : `${result.length} Cryptos Found.`}
       </p>
       {result.length > 0 ? (
-        <Cryptos data={result} />) : (
-          <div className="loader h-flex">
-            <FadeLoader color="#36d7b7" size={500} />
-          </div>
+        <Cryptos data={result} />
+      ) : (
+        <div className="loader h-flex">
+          <FadeLoader color="#36d7b7" size={500} />
+        </div>
       )}
     </div>
   );
