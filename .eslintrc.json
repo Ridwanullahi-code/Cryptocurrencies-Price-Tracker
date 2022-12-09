@@ -20,7 +20,8 @@
       "import/no-unresolved": "off",
       "no-shadow": "off",
       "react-hooks/exhaustive-deps":"off",
-      "react/forbid-prop-types":"off"
+      "react/forbid-prop-types":"off",
+      "import/extensions":"off"
     },
     "ignorePatterns": [
       "dist/",
