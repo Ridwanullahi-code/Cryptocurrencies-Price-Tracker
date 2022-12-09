@@ -1,5 +1,4 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
-import axios from 'axios';
 
 const initialState = {
   cryptos: [],
@@ -7,12 +6,13 @@ const initialState = {
 };
 
 export const fetchCrypto = createAsyncThunk('crypto/fetch', async () => {
-  const response = await axios.get('https://api.coincap.io/v2/assets');
-  return response.data;
+  const resolve = await fetch('https://api.coincap.io/v2/assets');
+  const response = await resolve.json();
+  return response;
 });
 
-export const cryptoSlice = createSlice({
-  name: 'crypto',
+const cryptoSlice = createSlice({
+  name: 'cryptos',
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {},

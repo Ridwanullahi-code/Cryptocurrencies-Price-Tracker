@@ -1,10 +1,13 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
-function Input() {
+function Input(props) {
+  const { change } = props;
   return (
     <div className="h-flex search-container">
       <input
-        type="search"
+        onChange={change}
+        type="text"
         className="search"
         placeholder="search..."
       />
@@ -12,4 +15,8 @@ function Input() {
   );
 }
 
+// props validation should be propTypes
+Input.propTypes = {
+  change: PropTypes.func.isRequired,
+};
 export default Input;

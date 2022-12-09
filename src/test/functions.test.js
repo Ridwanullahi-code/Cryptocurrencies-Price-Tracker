@@ -1,4 +1,6 @@
 import numbersWithCommas, { formatNumber } from '../Functions/formatNumber';
+import Filter from '../Functions/filter';
+import Message from '../Functions/message';
 
 describe('test for all functions', () => {
   // ACTION
@@ -26,5 +28,36 @@ describe('test numbersWithCommas function', () => {
 
   test('17193925.00 must be to 17,193.9', () => {
     expect(numbersWithCommas(formatNumber('17193925.00'))).toBe('17,193.9');
+  });
+});
+
+const data = [
+  { name: 'Bitcoin', rank: '1' },
+  { name: 'Ethereum', rank: '2' },
+  { name: 'Bitcoin Wave', rank: '2' },
+  { name: 'Bitcoin Life', rank: '2' },
+];
+describe('Filter cryptos', () => {
+  test('should return new cryptos', () => {
+    expect(Filter(data, 'Bi')).toHaveLength(3);
+    expect(Filter(data, '1')).toHaveLength(1);
+  });
+  test('return value must not be empty/undefined', () => {
+    expect(Filter(data, 'Bi')).not.toBeUndefined();
+    expect(Filter(data, 'Bi').length).not.toBe(0);
+  });
+  test('return value must be empty/undefined', () => {
+    expect(Filter(data, 'jy')).toStrictEqual([]);
+    expect(Filter(data, 'z').length).toStrictEqual(0);
+    expect(Filter(data, '4').length).toStrictEqual(0);
+  });
+});
+
+// test for message filtering
+describe('Message filtering', () => {
+  test('It should return an match message', () => {
+    Filter(data, 'Bi');
+    expect(Message(Filter(data, 'Bi'))).toBe('3 cryptos found');
+    expect(Message(Filter(data, '1'))).toBe('1 cryptos found');
   });
 });
