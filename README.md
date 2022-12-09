@@ -76,7 +76,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://cryptovest-app.netlify.app/crypto-details)
+- [Live Demo Link](https://cryptovest-app.netlify.app/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
