@@ -11,7 +11,7 @@ function Table(props) {
       <table className="mission-table white">
         <tbody>
           {ls.map((d, index) => (
-            <tr key={d.id}>
+            <tr key={d.rank} id={d.id}>
               <th className="p-two">{d}</th>
               <td className="p-two">
                 <span>

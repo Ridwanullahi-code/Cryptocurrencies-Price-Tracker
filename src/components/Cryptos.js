@@ -8,7 +8,7 @@ function Cryptos(props) {
   const navigate = useNavigate();
 
   const handleClick = (obj) => {
-    navigate('/crypto-details', {
+    navigate(`/crypto-details/${obj.id}`, {
       state: {
         crypto: [obj],
       },

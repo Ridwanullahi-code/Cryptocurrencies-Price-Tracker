@@ -15,7 +15,6 @@ function Navbar() {
           </span>
           <i className="fa-solid fa-microphone" />
           <i className="fa-solid fa-gear" />
-          <i className="fa-solid fa-moon mx" />
         </div>
       </div>
     </nav>
