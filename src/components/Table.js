@@ -28,7 +28,12 @@ function Table(props) {
         </tbody>
       </table>
       <div className="p-two">
-        <a href={data[0].explorer} className="web-btn white font-4">
+        <a
+          href={data[0].explorer}
+          target="_blank"
+          rel="noreferrer"
+          className="web-btn white font-4"
+        >
           Website
         </a>
       </div>
