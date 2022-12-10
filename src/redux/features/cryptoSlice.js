@@ -1,11 +1,11 @@
 import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
 import axios from 'axios';
-
+// state initialization
 const initialState = {
   cryptos: [],
   status: null,
 };
-
+// async fetch using redux toolkit thunk
 export const fetchCrypto = createAsyncThunk('crypto/fetch', async () => {
   const response = await axios.get('https://api.coincap.io/v2/assets');
   return response.data;
