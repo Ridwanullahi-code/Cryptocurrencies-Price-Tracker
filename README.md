@@ -33,9 +33,9 @@
 
 <!-- PROJECT DESCRIPTION -->
 
-# 📖 crytovest <a name="about-project"></a>
+# 📖 Cryptocurrencies Price Tracker <a name="about-project"></a>
 
-**cryptocurrency Price Tracker** that displays real-time prices for various cryptocurrencies
+**Cryptocurrencies Price Tracker** that displays real-time prices for various cryptocurrencies
 Use React for the front end and Redux for state management. Use Coinbase as API to retrieve cryptocurrency prices.
 Allow users to track the price of specific cryptocurrencies' status by name and rank.
 Use React for the front end and Redux for state management, JavaScript for creating interactive websites, and CSS for styling.
@@ -164,7 +164,7 @@ You can deploy this project using:
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/Ridwanullahi-code/cryptovest/issues)
+Feel free to check the [issues page](https://github.com/Ridwanullahi-code/Cryptocurrencies-Price-Tracker/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
