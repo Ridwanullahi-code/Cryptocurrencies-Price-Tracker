@@ -94,11 +94,11 @@ In order to run this project you need:
 ### Setup
 Clone this repository to your desired folder:
 ```sh
-  git clone https://github.com/Ridwanullahi-code/cryptovest.git
+  git clone https://github.com/Ridwanullahi-code/Cryptocurrencies-Price-Tracker.git
 ```
 or 
 ```sh
-  git clone git@github.com:Ridwanullahi-code/cryptovest.git
+  git clone git@github.com:Ridwanullahi-code/Cryptocurrencies-Price-Tracker.git
 ```
 ### Install
 Install application dependencies (Node has to be installed)
