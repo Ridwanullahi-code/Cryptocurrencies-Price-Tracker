@@ -35,7 +35,10 @@
 
 # 📖 crytovest <a name="about-project"></a>
 
-**cryptovest** is a single-page application fetched current cryptocurrency from API displayed on UI, allow people to select and filter cryptos.
+**cryptocurrency Price Tracker** that displays real-time prices for various cryptocurrencies
+Use React for the front end and Redux for state management. Use Coinbase as API to retrieve cryptocurrency prices.
+Allow users to track the price of specific cryptocurrencies' status by name and rank.
+Use React for the front end and Redux for state management, JavaScript for creating interactive websites, and CSS for styling.
 
 ## 🛠 Built With <a name="built-with"></a>
 
@@ -66,9 +69,8 @@
 
 ### Key Features <a name="key-features"></a>
 
-- Fetch API using AXIOS
-- Store the data in a Redux Slice/Store
-- Display the data on UI
+- Home page: A landing page that displays the current prices of popular cryptocurrencies and provides a search bar to search for specific cryptocurrencies.
+- Cryptocurrency Details: A page that displays detailed information about a specific cryptocurrency, including the current price, market cap, volume, and price charts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -151,9 +153,8 @@ You can deploy this project using:
 
 > Describe 1 - 3 features you will add to the project.
 
-- **Update the application in real time**
-- **Add Cypto Currency symbols, open and close price**
-- **A better UI**
+- Cryptocurrency Alerts: A page that allows users to set up alerts for specific cryptocurrencies when the price reaches a certain threshold.
+- Login/Sign Up: A page that allows users to create an account or log in to an existing account to save their favorite cryptocurrencies and set up alerts.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
